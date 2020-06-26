@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}
+		{% endblock %}
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'registration/css/sty.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+	<img class="wave" src="{% static 'registration/img/wave.png' %}">
+	<div class="container">
+		<div class="img">
+			<img src="{% static 'registration/img/bg.svg' %}">
+		</div>
+		<div class="login-content">
+			{% block reg %}
+
+			{% endblock %}
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'registration/js/main.js' %}"></script>
+</body>
+</html>
+	
